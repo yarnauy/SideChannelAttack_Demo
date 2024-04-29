@@ -28,7 +28,7 @@ fs.mounts = [
 {% endfor %}
   { path = "{{ entrypoint }}", uri = "file:{{ entrypoint }}" },
   { path = "/etc/hosts", uri = "file:helper-files/hosts" },
-
+  
   { type = "tmpfs", path = "/tmp" },
 ]
 
@@ -56,3 +56,8 @@ sgx.trusted_files = [
   "file:scripts/",
   "file:helper-files/",
 ]
+
+sgx.allowed_files = [
+  "file:log.txt",
+]
+

@@ -4,7 +4,7 @@
 import time
 import logging
 
-logging.basicConfig(filename='/tmp/log.txt', level=logging.INFO, format='%(message)s')
+logging.basicConfig(filename='log.txt', level=logging.INFO, format='%(message)s')
 
 
 def compare_strings_withlog(str1, str2):

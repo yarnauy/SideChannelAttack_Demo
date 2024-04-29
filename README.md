@@ -46,4 +46,3 @@ make SGX=1 RA_TYPE=epid RA_CLIENT_SPID=12345678901234567890123456789012 \
 gramine-sgx ./python scripts/server.py
 ```
 
-Log file location: /tmp/log.txt
